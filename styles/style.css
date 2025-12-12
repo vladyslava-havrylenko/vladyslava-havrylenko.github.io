@@ -1,0 +1,77 @@
+
+:root {
+    --safe-primary: #3b82f6; /* blue */
+    --safe-secondary: #22c55e; /* green */
+    --safe-bg: #f4f6fb;
+    --safe-dark: #0f172a;
+}
+
+* {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--safe-bg);
+    color: var(--safe-dark);
+}
+
+.navbar-brand span {
+    font-weight: 700;
+}
+
+.hero-section {
+    padding: 5rem 0 4rem;
+}
+
+.hero-badge {
+    font-size: 0.85rem;
+    letter-spacing: .05em;
+}
+
+.quick-card {
+    font-size: 1.2rem;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.quick-card p {
+    font-size: 3rem;
+}
+
+.quick-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+}
+
+.section-title {
+    font-weight: 700;
+}
+
+.exercise-box {
+    min-height: 4rem;
+}
+
+.breath-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 999px;
+    border: 3px solid var(--safe-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: 600;
+}
+
+footer {
+    font-size: 0.85rem;
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 9999;
+    padding: 0.5rem;
+}
