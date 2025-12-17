@@ -82,11 +82,17 @@ function showCookieBanner() {
 
 function acceptCookies() {
     const oneYear = 365 * 24 * 60 * 60;
-    document.cookie = 'safeMindConsent=1; max-age=' + oneYear + '; path=/';
+
+    document.cookie =
+        'safeMindConsent=1; max-age=' +
+        oneYear +
+        '; path=/; SameSite=Lax';
+
     if (cookieBanner) {
         cookieBanner.style.display = 'none';
     }
 }
+
 
 if (cookieAccept) {
     cookieAccept.addEventListener('click', acceptCookies);
