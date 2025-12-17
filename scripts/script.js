@@ -86,7 +86,7 @@ function acceptCookies() {
     document.cookie =
         'safeMindConsent=1; max-age=' +
         oneYear +
-        '; path=/; SameSite=Lax';
+        '; path=/';
 
     if (cookieBanner) {
         cookieBanner.style.display = 'none';
