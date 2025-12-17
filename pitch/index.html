@@ -110,7 +110,7 @@ const exercises = [
 button.addEventListener('click', () => {
   const i = Math.floor(Math.random() * exercises.length);
   box.textContent = exercises[i];
-});
+}); 
 ```
 
 **What this code does:**
@@ -134,9 +134,11 @@ setInterval(() => {
   if (phase === 'inhale') {
     circle.textContent = 'Inhale';
     phase = 'exhale';
+    size = 140;
   } else {
     circle.textContent = 'Exhale';
     phase = 'inhale';
+    size = 170;
   }
 }, 4000);
 ```
