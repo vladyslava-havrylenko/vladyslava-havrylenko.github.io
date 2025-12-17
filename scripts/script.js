@@ -77,6 +77,7 @@ function hasCookieConsent() {
 function showCookieBanner() {
     if (!hasCookieConsent() && cookieBanner) {
         cookieBanner.style.display = 'block';
+        console.log("test");
     }
 }
 
